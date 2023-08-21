@@ -1,0 +1,33 @@
+<form id="encuestaForm">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required><br>
+    
+    <label>Genero:</label>
+    <select id="genero" required>
+      <option value="Masculino">Masculino</option>
+      <option value="Femenino">Femenino</option>
+    </select><br>
+    
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" required><br>
+    
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" required><br>
+    
+    <label for="partido">Partido Político:</label>
+    <input type="text" id="partido" required><br>
+    
+    <button type="button" onclick="registrarEncuesta()">Registrar Encuesta</button>
+  </form>
+  
+  <script>
+  function registrarEncuesta() {
+    const nombre = document.getElementById("nombre").value;
+    const genero = document.getElementById("genero").value;
+    const edad = document.getElementById("edad").value;
+    const correo = document.getElementById("correo").value;
+    const partido = document.getElementById("partido").value;
+  
+  }
+  </script>
+  
